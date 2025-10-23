@@ -65,6 +65,8 @@ export default function ExpenseForm({ onAddExpense }: Props) {
           <option>Travel</option>
           <option>Shopping</option>
           <option>Rent</option>
+          <option>gym</option>
+          <option>health</option>
           <option>Other</option>
         </select>
 
@@ -77,8 +79,8 @@ export default function ExpenseForm({ onAddExpense }: Props) {
 
         <button
           type="submit"
-          className="bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-200"
-        >
+          className="bg-blue-300 text-black font-semibold py-2 rounded-lg hover:bg-blue-400 transition"
+>
           ➕ Add Expense
         </button>
       </div>

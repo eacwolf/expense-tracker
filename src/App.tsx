@@ -6,13 +6,13 @@ import ExpenseList from "./components/ExpenseList.tsx";
 export default function App() {
   const [expenses, setExpenses] = useState<Expense[]>([]);
 
-  // ✅ Load from localStorage when app starts
+  // Load from localStorage when app starts
   useEffect(() => {
     const saved = localStorage.getItem("expenses");
     if (saved) setExpenses(JSON.parse(saved));
   }, []);
 
-  // ✅ Save to localStorage whenever expenses change
+  //  Save to localStorage whenever expenses change
   useEffect(() => {
     localStorage.setItem("expenses", JSON.stringify(expenses));
   }, [expenses]);
